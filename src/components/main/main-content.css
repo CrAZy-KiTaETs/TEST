@@ -1,0 +1,189 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.product-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-nav {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.product-nav li a {
+ color: #E5F3FF;
+ padding-bottom: 5px;
+}
+
+.product-nav li.active a {
+  color: #319dff;
+  border-bottom: 1px solid #319dff;
+}
+
+.product-info {
+  font-size: 20px;
+  color: #eef0f4;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.main-content {
+  padding: 0 !important;
+}
+
+.main-content-header {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.main-content-header button {
+  /* width: 12px 16px; */
+  width: 204px;
+  background-color: transparent;
+  border: 1px solid #319dff;
+  border-radius: 12px;
+  color: #eef0f4;
+}
+
+.btns {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.content-ul li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 20px 21px 20px;
+  color: #eef0f4;
+  border-bottom: 0.5px solid #7d8fa9;
+  position: relative;
+}
+
+.default {
+    color: #7d8fa9 !important;
+}
+
+.default * {
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 16px;
+  background-color: red;
+  border: 1px solid #7d8fa9;
+  user-select: none;
+  position: relative;
+}
+
+.checkbox::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #7d8fa9;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 10;
+  background-color: #1d232c;
+}
+
+.checkbox:checked::before {
+  background-color: #319dff;
+}
+
+.number {
+  width: 256px;
+  margin-left: 20px;
+}
+
+.stock {
+  width: 134px;
+}
+
+.date {
+  width: 130px;
+}
+
+.sum {
+  width: 130px;
+}
+
+.counter {
+  width: 130px;
+}
+
+.status {
+  width: 120px;
+}
+
+.options {
+  width: 92px;
+  text-align: right;
+}
+
+.options-btns {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+
+.content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eef0f4;
+    padding: 20px;
+}
+
+.btn-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.list-btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: none;
+    color: #eef0f4;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.list-btn.active {
+    background-color: #319dff;
+}
+
+.arrow-btns {
+  background-color: transparent;
+  border: none;
+  padding: 0 10px;
+}
+
+.right-arrow {
+  rotate: 180deg;
+}
